@@ -1,0 +1,6 @@
+# We need to exclude the 3 csv files that contains the bikeshare data
+# chicago.csv, newy_work.csv and washington.csv, we can use a wildcard *.csv
+# to esclude all the csv files in the directory
+
+*.csv
+
