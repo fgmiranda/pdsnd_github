@@ -14,25 +14,25 @@ def get_filters():
     (str) month - name of the month to filter by, or "all" to apply no month filter
     (str) day - name of the day of week to filter by, or "all" to apply no day filter """
     print('\nHello! Let\'s explore some US bikeshare data!')
-    # Validating city
+    # Validating city - City can only be Chicago, New York or Washington
     while True:
         city = input('Would you like to see data from Chicago, New York, or Washington? ')
         if city.lower() not in CITY_DATA:
-            print('*** ERROR: Not a valid city. Please check spelling and input again.')
+            print('*** ERROR: Valid cities are Chicago, New York or Washington.')
         else:
             break
-    # Validating month
+    # Validating month - Month can only be January, February, March, April, May, June or All
     while True:
         month = input('Which month? January, February, March, April, May, June, or All? ')
         if month.lower() not in ('january' , 'february' , 'march' , 'april' , 'may' , 'june' , 'all'):
-            print('*** ERROR: Not a valid month. Please check spelling and input again.')
+            print('*** ERROR: Valid monts are January, February, March, April, May, June or All.')
         else:
             break
-    # Validating day
+    # Validating day - Day can only be Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or All
     while True:
         day = input('Which day of the week? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or All? ')
         if day.lower() not in ('monday' , 'tuesday' , 'wednesday' , 'thursday' , 'friday' , 'saturday' , 'sunday' , 'all'):
-            print('*** ERROR: Not a valid day of the week.')
+            print('*** ERROR: Valid days are Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or All.')
         else:
             break
     return city, month, day
@@ -120,7 +120,7 @@ def ind_trip(df):
         elif ind_trip.lower() == 'no':
             break
         else:
-            print('*** ERROR: Not a valid answer')
+            print('*** You can only answer (yes) or (no)')
 
 def main():
     # Main funciton that will call the aboe mentioned Functions
@@ -141,6 +141,6 @@ while True:
     elif start.lower() == 'no':
         break
     else:
-        print('*** ERROR: Not a valid answer')
+        print('*** ERROR: You can only answer Yes or No')
 
 print ('\nThank you.....have a nice day!!!')
