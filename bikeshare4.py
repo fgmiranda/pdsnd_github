@@ -1,4 +1,6 @@
 # Udacity - Programming from data science - Introduction to Python
+# Modifications required for Version Control Lesson
+
 import time
 import pandas as pd
 import numpy as np
