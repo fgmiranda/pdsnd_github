@@ -13,5 +13,5 @@ The bikeshare python project file bikeshare4.py (last version)
 The "data' files, 3 csv files containing the information for bikeshare rides from Chicago, New York City and Washington are located on the "local" repository but ignored on GitHub and included in the .gitignore file 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Based on Udacity - Programming from data science - Version Control
 
