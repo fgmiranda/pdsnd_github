@@ -11,21 +11,21 @@ def get_filters():
     (str) month - name of the month to filter by, or "all" to apply no month filter
     (str) day - name of the day of week to filter by, or "all" to apply no day filter """
     print('\nHello! Let\'s explore some US bikeshare data!')
-    # Validating city
+    # Validating city - City can only be Chicago, New York or Washington
     while True:
         city = input('Would you like to see data from Chicago, New York, or Washington? ')
         if city.lower() not in CITY_DATA:
             print('*** ERROR: Not a valid city. Please check spelling and input again.')
         else:
             break
-    # Validating month
+    # Validating month - Month can only be January, February, March, April, May, June or All
     while True:
         month = input('Which month? January, February, March, April, May, June, or All? ')
         if month.lower() not in ('january' , 'february' , 'march' , 'april' , 'may' , 'june' , 'all'):
             print('*** ERROR: Not a valid month. Please check spelling and input again.')
         else:
             break
-    # Validating day
+    # Validating day - Day can only be Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday or All
     while True:
         day = input('Which day of the week? Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday, or All? ')
         if day.lower() not in ('monday' , 'tuesday' , 'wednesday' , 'thursday' , 'friday' , 'saturday' , 'sunday' , 'all'):
